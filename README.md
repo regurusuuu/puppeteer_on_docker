@@ -6,6 +6,7 @@
 
 - Dcoker 上で puppeteer の実行環境を提供します
 - `docker`, `docker-compose` コマンドが実行できる環境が必要です
+    - docker-compose.yml のネットワーク設定は、適宜変更してください。
 - src ディレクトリ配下がマウントされています
 
 ## Usase
