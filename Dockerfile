@@ -23,7 +23,7 @@ RUN mkdir /home/puppeteer && groupadd puppeteer && \
 WORKDIR /workspace
 USER puppeteer
 
-RUN npm i puppeteer
+RUN npm install puppeteer readline-sync eslint
 
 COPY ./sample.js .
 
