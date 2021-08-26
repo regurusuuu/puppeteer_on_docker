@@ -1,0 +1,15 @@
+{
+  "name": "puppeteer",
+  "version": "1.0.0",
+  "description": "puppeteer on docker",
+  "main": "sample.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "puppeteer": ">2.1.x",
+    "readline-sync": "",
+    "eslint": ""
+  },
+  "author": "sci01708"
+}
