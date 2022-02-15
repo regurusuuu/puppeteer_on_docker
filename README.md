@@ -22,7 +22,7 @@ cd puppeteer_on_docker
 docker-compose up -d
 
 # コンテナに接続
-dokcer exec -it puppeteer bash
+docker-compose exec puppeteer bash
 
 # サンプルスクリプトの実行
 puppeteer@ba0547223609:/workspace$ node sample.js
