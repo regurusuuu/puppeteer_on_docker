@@ -15,7 +15,7 @@
 
 ```bash
 # リポジトリのクローン
-git clone https://atlassian.nifty.com/stash/scm/~sci01708/puppeteer_on_docker.git
+git clone https://github.com/regurusuuu/puppeteer_on_docker.git
 cd puppeteer_on_docker
 
 # おもむろに docker-compose
