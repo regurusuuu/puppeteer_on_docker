@@ -1,4 +1,4 @@
-FROM node:13-slim
+FROM node:18-slim
 
 RUN apt-get update && apt-get install -y \
     gconf-service libasound2 libatk1.0-0 \
@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
     libxfixes3 libxi6 libxrandr2 libxrender1 \
     libxss1 libxtst6 ca-certificates \
     fonts-liberation libappindicator1 \
-    libnss3 lsb-release xdg-utils wget
+    libnss3 lsb-release xdg-utils wget libgbm-dev
 
 
 WORKDIR /workspace

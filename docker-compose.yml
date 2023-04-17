@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 services:
   puppeteer:
     image: sci01708/puppeteer
