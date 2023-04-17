@@ -1,36 +1,27 @@
 # Puppeteer on Docker
 
-[puppeteer/puppeteer: Headless Chrome Node.js API](https://github.com/puppeteer/puppeteer) が動作する Docker 環境です。
+This is docker environment which works [puppeteer/puppeteer: Headless Chrome Node.js API](https://github.com/puppeteer/puppeteer).
 
 ## Description
 
-- Dcoker 上で puppeteer の実行環境を提供します
-- `docker`, `docker-compose` コマンドが実行できる環境が必要です
-    - docker-compose.yml のネットワーク設定は、適宜変更してください。
-- src ディレクトリ配下がマウントされています
+- Need environment can run `docker` and `docker-compose` commands.
+- Change docker network settings accordingly on `docker-compose.yml`.
+- The `src/` directory is mounted on the volume.
 
-## Usase
+## Usage
 
-`docker-compose` でコンテナを起動して、ボリュームにマウントされたスクリプトを実行する、という流れになります。
+Launch a container with `docker-compose up` and run scripts which are mounted the volume.  
+If you want to run other puppeteer scripts, you can place them under `src/` directory.
 
 ```bash
-# リポジトリのクローン
+# clone repository
 git clone https://github.com/regurusuuu/puppeteer_on_docker.git
 cd puppeteer_on_docker
 
-# おもむろに docker-compose
+# build and start up the application
 docker-compose up -d
 
-# コンテナに接続
-docker-compose exec puppeteer bash
-
-# サンプルスクリプトの実行
-puppeteer@ba0547223609:/workspace$ node sample.js
+# run sample script
+docker-compose exec puppeteer node sample.js
 [ 'Example Domain' ]
-
-# 切断
-puppeteer@ba0547223609:/workspace$ exit
-
-# コンテナの削除
-docker-compose down
 ```
