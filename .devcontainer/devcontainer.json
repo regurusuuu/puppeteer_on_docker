@@ -1,0 +1,24 @@
+{
+"name": "puppeteer",
+  "dockerComposeFile": [
+    "../compose.yml",
+    "compose-devcontainer.yml"
+  ],
+  "service": "puppeteer",
+  "workspaceFolder": "/workspace/src",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "extensions.verifySignature": false
+      },
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "shardulm94.trailing-spaces",
+        "oderwat.indent-rainbow"
+      ]
+    }
+  }
+}

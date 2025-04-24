@@ -1,8 +1,8 @@
-version: '3.8'
 services:
   puppeteer:
     image: regurusuuu/puppeteer
     container_name: puppeteer
+    platform: linux/x86_64
     build:
       context: ./
     volumes:
@@ -10,10 +10,10 @@ services:
     tty: true
     networks:
       default:
-        ipv4_address: 172.19.0.2
+        ipv4_address: 172.30.0.2
 networks:
   default:
     ipam:
       driver: default
       config:
-      - subnet: "172.19.0.0/24"
+      - subnet: "172.30.0.0/24"

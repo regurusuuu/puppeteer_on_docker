@@ -1,0 +1,5 @@
+services:
+  puppeteer:
+    volumes:
+      - ../src:/workspace/src
+    command: /bin/sh -c "while sleep 1000; do :; done"
